@@ -54,14 +54,16 @@ Calbindin (PDB ID: 1D1O)
 [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040039/)
 - Monomeric, well-packed, many homologous proteins available 
 
-## Difficult cases:
+## Potentially difficult cases:
 1. Two topologies separated by a point mutation [source](https://www.pnas.org/content/106/50/21149)
 - IgG-binding (PDB ID: 2LHC) [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035112/)
 - Albumin-binding (PDB ID: 2LHD) [MSA + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035114/), [single sequence + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040173/), [single sequence + no templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040175/)
 
 2. Fold switch XCL1 (PDB ID: 2JP1, 1J9O) [source](https://pubs.acs.org/doi/10.1021/acschembio.8b00276), [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035121/)
 
-3. Ideal de novo + redesigned de novo fold
+3. De novo folds
+- Ideal de novo Rossmann-like fold (PDB ID: 2LV8) [source](https://www.nature.com/articles/nature11600), [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035133/)
+- Redesigned de novo fold (PDB ID: 6VG7) [source](https://science.sciencemag.org/content/369/6507/1132), [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035135/)
 
 ## Comparing to AlphaFold2:
 ## Post-exercise questions:
