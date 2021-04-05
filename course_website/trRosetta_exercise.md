@@ -55,7 +55,16 @@ Calbindin (PDB ID: 1D1O)
 - Monomeric, well-packed, many homologous proteins available 
 
 ## Difficult cases:
-## Comparing to AlphaFold2
+1. Two topologies separated by a point mutation [source](https://www.pnas.org/content/106/50/21149)
+IgG-binding (PDB ID: 2LHC) [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035112/)
+
+Albumin-binding (PDB ID: 2LHD) [MSA + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035114/), [Single seq + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040173/), [Single seq + no templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040175/)
+
+2. Fold switch
+
+3. Ideal de novo + redesigned de novo fold
+
+## Comparing to AlphaFold2:
 ## Post-exercise questions:
 
 \* Adapted from PyRosetta BootCamp 2021
