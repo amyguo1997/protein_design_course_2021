@@ -12,9 +12,7 @@ How does traditional fragment-based folding work in Rosetta?
 
 There are many other details you can read about [here](https://new.rosettacommons.org/docs/latest/application_documentation/structure_prediction/abinitio). A design that is likely to fold well into a given structure would result in low RMSD decoys having low energy while high RMSD decoys have high energy (i.e. the desired structure is indeed the lowest energy conformation for the designed sequence). This is commonly referred to as a folding funnel.
 
-<p align="center">
 ![folding_funnel](https://miro.medium.com/max/7334/1*tpZtrx8ZziiTljtQyW4Zmg.png "Folding funnel")
-</p>
 
 To see a video of ubiquitin folding via fragment-based methods: 
 
@@ -37,8 +35,6 @@ How does transform-restrained Rosetta (trRosetta) work? Keep in mind the overall
 5. Generate coarse-grained models via minimization (e.g. gradient descent, BFGS, etc.) in Rosetta
 6. Refine with full-atom relax 
 
-<p align="center">
 ![trrosetta](https://yanglab.nankai.edu.cn/trRosetta/help/fig1.png "trRosetta work flow")
-</p>
 
 \* Adapted from PyRosetta BootCamp 2021
