@@ -1,5 +1,4 @@
 # Structure Prediction
-## Folding algorithm*
 Any protein folding algorithm requires:
 
 1. Search strategy: some way to generate candidate structures (decoys)
@@ -17,7 +16,7 @@ There are many other details you can read about [here](https://new.rosettacommon
 
 To see a video of ubiquitin folding via fragment-based methods: 
 
-<a href="https://www.youtube.com/watch?v=TT4syxsh_AU&t=1s" target="_blank"><img src="http://img.youtube.com/vi/TT4syxsh_AU/0.jpg" /></a>
+<a href="https://www.youtube.com/watch?v=TT4syxsh_AU&t=1s" target="_blank"><img src="http://img.youtube.com/vi/TT4syxsh_AU/0.jpg" img align="center" /></a>
 
 Some disadvantages of fragment-based methods:
 
