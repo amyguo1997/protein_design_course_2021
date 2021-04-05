@@ -12,4 +12,4 @@ How does traditional fragment-based folding work in Rosetta?
 2. Starting from a fully extended chain, randomly replace the torsion angles for a stretch of n residues with a set from the fragment library file (Monte Carlo sampling w/ Metropolis Criterion)
 
 There are many other details you can read about [here](https://new.rosettacommons.org/docs/latest/application_documentation/structure_prediction/abinitio). sentially this checks to 
-* Adapted from PyRosetta BootCamp 2021
+\* Adapted from PyRosetta BootCamp 2021
