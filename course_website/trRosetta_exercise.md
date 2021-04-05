@@ -12,7 +12,9 @@ How does traditional fragment-based folding work in Rosetta?
 
 There are many other details you can read about [here](https://new.rosettacommons.org/docs/latest/application_documentation/structure_prediction/abinitio). A design that is likely to fold well into a given structure would result in low RMSD decoys having low energy while high RMSD decoys have high energy (i.e. the desired structure is indeed the lowest energy conformation for the designed sequence). This is commonly referred to as a folding funnel.
 
+<p align="center">
 ![folding_funnel](https://miro.medium.com/max/7334/1*tpZtrx8ZziiTljtQyW4Zmg.png "Folding funnel")
+</p>
 
 To see a video of ubiquitin folding via fragment-based methods: 
 
@@ -26,5 +28,17 @@ Some disadvantages of fragment-based methods:
 2. Success of folding limited by quality of fragments generated. What should we consider when generating fragments? Just sequence? Secondary-structure? Solvent-accessibility? Position in the sequence? What if the protein is dynamic? 
 
 ### Machine learning-based folding: trRosetta
+How does transform-restrained Rosetta (trRosetta) work? Keep in mind the overall process of modeling. First you want to generate your input features based on domain-knowledge/exploratory data analysis (e.g. perhaps you'd like to transform your data prior to feeding it into your model or use it to generate new features), train your model to minimize a loss function, and use your model to predict outputs (structures) based on new inputs (sequences). 
+
+1. Generate input features. Can be as simple as a single sequence or could include a multi-sequence alignment (coevolutionary coupling features) and/or homologous templates.
+2. Feed input through pre-trained deep neural network (trained on non-redundant protein set from PDB)
+3. The model will estimate likelihood of inter-residue distances/orientations
+4. Probabilities converted into smoothed inter-residue restraints 
+5. Generate coarse-grained models via minimization (e.g. gradient descent, BFGS, etc.) in Rosetta
+6. Refine with full-atom relax 
+
+<p align="center">
+![trrosetta](https://yanglab.nankai.edu.cn/trRosetta/help/fig1.png "trRosetta work flow")
+</p>
 
 \* Adapted from PyRosetta BootCamp 2021
