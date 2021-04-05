@@ -6,6 +6,8 @@ Any protein folding algorithm requires:
 2. Scoring function: discriminate near-native structures from the others
 
 ### Fragment-based folding: AbInitio
+\* Adapted from PyRosetta BootCamp 2021
+
 How does traditional fragment-based folding work in Rosetta? 
 
 1. For each n-length fragment in your design (sliding window of length n), generate a list of potential backbone geometries that fragment may adopt. Rosetta finds pieces of protein structures from the PDB similar in sequence and stores the corresponding torsion angles typically for 9-/3-mers.
@@ -38,8 +40,9 @@ How does transform-restrained Rosetta (trRosetta) work? Keep in mind the overall
 
 
 ![trrosetta](https://yanglab.nankai.edu.cn/trRosetta/help/fig1.png "trRosetta work flow")
+![coevolution](https://i1.wp.com/www.blopig.com/blog/wp-content/uploads/2020/12/image-8.png?resize=768%2C297&ssl=1 "MSA coevolution")
 
-This method does not rely on fragments and can also work for de novo designs! The success of this method is dependent on how well the model has learned fundamental sequence-structure relationships.
+This method does not rely on fragments and can also work for de novo designs! The success of this method is dependent on how well the model has learned fundamental sequence-structure relationships. For more details, please see the primary publication [here](https://www.pnas.org/content/117/3/1496). 
 
 ## Pre-exercise questions:
 1. What are some potential properties of a given protein that may make structure prediction difficult? 
@@ -66,6 +69,16 @@ Calbindin (PDB ID: 1D1O)
 - Redesigned de novo fold (PDB ID: 6VG7) [source](https://science.sciencemag.org/content/369/6507/1132), [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035135/)
 
 ## Comparing to AlphaFold2:
-## Post-exercise questions:
+You may have heard about the most recent CASP winner AlphaFold2 inspired which also uses machine learning to predict protein structure (getting about 90% of C-alpha atoms within a defined distance cutoff of the target structure for 2/3 of the targets). You can read an opinion article about AlphaFold (how well it performed, how it works, etc.) [here](https://www.blopig.com/blog/2020/12/casp14-what-google-deepminds-alphafold-2-really-achieved-and-what-it-means-for-protein-folding-biology-and-bioinformatics/). Instead of predicting constraints, the algorithm actually outputs a full structure at the end. Since it is not currently open-source, we will be comparing the AF2 published structure for CoV protein 3a against trRosetta + experiment. 
 
-\* Adapted from PyRosetta BootCamp 2021
+Protein 3a (PDB ID: 6XDC) [source 1](https://www.biorxiv.org/content/10.1101/2020.06.17.156554v1.full.pdf), [source 2](https://deepmind.com/research/open-source/computational-predictions-of-protein-structures-associated-with-COVID-19), [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040044/)
+
+You may find it helpful to look at the C-terminal and N-terminal domains separately. 
+
+## Post-exercise questions:
+1. Is trRosetta able to capture the structural effects of single point mutations? 
+2. How does the type of input (MSA vs. single sequence, template vs. no template) affect trRosetta output? Does including more features lead to better predictions?
+3. Is trRosetta able to produce models capturing multiple folds for dynamic proteins? 
+4. Which example had the sharpest contact map? Why might that be the case?
+5. How does the trRosetta prediction compare to that of AF2 for CoV protein 3a? Why might the N-terminal domain be poorly predicted? 
+6. Find a protein you are interested in and submit it to the trRosetta [server](https://yanglab.nankai.edu.cn/trRosetta/) for discussion next class. 
