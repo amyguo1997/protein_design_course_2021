@@ -56,10 +56,8 @@ Calbindin (PDB ID: 1D1O)
 
 ## Difficult cases:
 1. Two topologies separated by a point mutation [source](https://www.pnas.org/content/106/50/21149)
-
-IgG-binding (PDB ID: 2LHC) [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035112/)
-
-Albumin-binding (PDB ID: 2LHD) [MSA + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035114/), [single sequence + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040173/), [single sequence + no templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040175/)
+- IgG-binding (PDB ID: 2LHC) [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035112/)
+- Albumin-binding (PDB ID: 2LHD) [MSA + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035114/), [single sequence + templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040173/), [single sequence + no templates result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040175/)
 
 2. Fold switch XCL1 (PDB ID: 2JP1, 1J9O) [source](https://pubs.acs.org/doi/10.1021/acschembio.8b00276), [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR035121/)
 
