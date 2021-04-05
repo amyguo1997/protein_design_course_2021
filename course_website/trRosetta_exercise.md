@@ -81,4 +81,4 @@ You may find it helpful to look at the C-terminal and N-terminal domains separat
 3. Is trRosetta able to produce models capturing multiple folds for dynamic proteins? 
 4. Which example had the sharpest contact map? Why might that be the case?
 5. How does the trRosetta prediction compare to that of AF2 for CoV protein 3a? Why might the N-terminal domain be poorly predicted? 
-6. Find a protein you are interested in and submit it to the trRosetta [server](https://yanglab.nankai.edu.cn/trRosetta/) for discussion next class. 
+6. Within your groups, find a protein you are interested in and submit it to the trRosetta [server](https://yanglab.nankai.edu.cn/trRosetta/) for discussion next class. 
