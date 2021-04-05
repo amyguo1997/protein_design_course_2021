@@ -1,7 +1,7 @@
 # Structure Prediction
 ## Folding algorithm*
 Any protein folding algorithm requires:
-(1) Search strategy: some way to generate candidate structures (decoys)
+(1) Search strategy: some way to generate candidate structures (decoys) \n
 (2) Scoring function: discriminate near-native structures from the others
 
 How does traditional fragment-based folding work in Rosetta? 
