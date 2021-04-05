@@ -2,9 +2,10 @@
 ## Folding algorithm*
 Any protein folding algorithm requires:
 
-(1) Search strategy: some way to generate candidate structures (decoys) 
+(1) Search strategy: some way to generate candidate structures (decoys)
 (2) Scoring function: discriminate near-native structures from the others
 
+### Fragment-based folding
 How does traditional fragment-based folding work in Rosetta? 
 
 1. Generate n-mer fragment library for your given sequence (i.e. for stretches of n residues in your design, find pieces of protein structures from the PDB matching that stretch in sequence and store the corresponding torsion angles in a file)
