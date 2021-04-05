@@ -45,11 +45,14 @@ This method does not rely on fragments and can also work for de novo designs! Th
 1. What are some potential properties of a given protein that may make structure prediction difficult? 
 2. Would you expect the trRosetta algorithm to perform well on de novo protein designs when it has been trained predominantly on natural proteins?
 
-For the following exercises, before looking at the trRosetta result, take a look at the structure of the protein(s) in question. Skim through the associated primary publication if given to get an idea of how the protein behaves in real life (i.e. not as a static crystal structure). Try to guess what the trRosetta result might be and build your intuition! 
+For the following exercises, before looking at the trRosetta result, take a look at the structure of the protein(s) in question. Skim through the associated primary publication if given to get an idea of how the protein behaves in real life (i.e. not as a static crystal structure). Try to guess what the trRosetta result might be and build your intuition! After doing so, you can check to see how accurate the prediction was by downloading the model and aligning it to the PDB structure in PyMOL. 
+
+All results were generated with MSA + homologous templates unless explicitly stated otherwise.
 
 ## Simple case:
 Calbindin (PDB ID: 1D1O)
 [trRosetta result](https://yanglab.nankai.edu.cn/trRosetta/output/TR040039/)
+- Monomeric, well-packed, many homologous proteins available 
 
 ## Difficult cases:
 ## Comparing to AlphaFold2
