@@ -10,7 +10,7 @@ Any protein folding algorithm requires:
 
 How does traditional fragment-based folding work in Rosetta? 
 
-1. For each n-length fragment in your design (sliding window of length n), generate a list of potential backbone geometries that fragment may adopt. Rosetta finds pieces of protein structures from the PDB similar in sequence and stores the corresponding torsion angles typically for 9-/3-mers.
+1. For each n-length fragment in your design (take sliding window of length n), generate a list of potential backbone geometries that the fragment may adopt. Rosetta does this by finding pieces of protein structures from the PDB similar in sequence and stores the corresponding torsion angles in a file, typically for 9-/3-mers.
 2. Starting from a fully extended chain, randomly replace the torsion angles for a stretch of n residues with a set from the fragment library file (Monte Carlo sampling w/ Metropolis Criterion)
 
 There are many other details you can read about [here](https://new.rosettacommons.org/docs/latest/application_documentation/structure_prediction/abinitio). A design that is likely to fold well into a given structure would result in low RMSD decoys having low energy while high RMSD decoys have high energy (i.e. the desired structure is indeed the lowest energy conformation for the designed sequence). This is commonly referred to as a folding funnel.
